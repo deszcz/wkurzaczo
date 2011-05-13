@@ -1,0 +1,163 @@
+a, a:link, a:visited  {
+text-decoration: none;
+color:#000;
+}
+a:hover, a:active   {
+text-decoration: underline;
+color:#a28a71;
+}
+
+h1 {
+font-size: 20px;
+padding: 20px 0 0 20px;
+}
+h2 {
+font-size: 13px;
+color: #000;
+padding-top: 5px;
+}
+h3 {
+font-size: 11px;
+color: #a28a71;
+padding-top: 10px;
+}
+p {
+font-size: 10px;
+color: #635631;
+}
+form {
+float: right;
+padding: 0 10px 0 0;
+}
+input {
+background: #000;
+color: #fff;
+border: inset 1px #000;
+}
+/**Everything above here is just formatting stuff, edit it if you want to change colors and whatnot...**/
+.searchbutton {
+width: 19px;
+height: 30px;
+border: none;
+vertical-align: middle;
+}
+
+#header img,#content img,#footer img{display:block}
+
+body {
+background: url(images/topbg.jpg) repeat-x #a28a71;
+color: #FFFFFF;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+text-align:center; /* centre for ie5.+*/
+display: block;
+line-height: 1.5;
+}
+/* commented backslash hack \*/ 
+html, body{height:100%;} 
+/* end hack */
+html,body {margin:0;padding:0}
+
+body h1 {
+text-align: left;
+}
+#wrapper {  /** Don't touch this**/
+width: 604px;
+margin-left: auto;
+margin-right: auto;
+}
+#header {
+background: url(images/header.jpg) no-repeat;
+height: 72px;
+position: relative;
+margin-top: 30px;
+}
+/*Menu Code Begin*/
+	
+#nav {  /**Don't change this either!**/
+position: absolute;
+left: 330px;
+bottom: -16px;
+list-style:none;
+}
+
+#nav li{display:inline;}
+	
+#nav a{
+padding: 0 1px 0 1px;
+float:left;
+height:24px;
+width:70px;
+text-decoration:none;
+}
+      
+#nav a:hover { background-position: -70px 0; }  /**All this code controls how the menu reacts to rollovers**/
+#nav a.selected {background-position: -70px 0; }
+#nav a:active { background-position: 0 0; }
+#thome a  { background: url(images/home.jpg) top left no-repeat; }
+#tabout a { background: url(images/about.jpg) top left no-repeat; }
+#tcontact a { background: url(images/contact.jpg) top left no-repeat;   }
+
+/*End Menu Code*/
+
+#title, #content {
+border-left: #635631 2px solid;
+border-right: #635631 2px solid;
+}
+#title {
+background: url(images/titlebar.jpg) no-repeat;
+height: 30px;
+}
+#content{
+background: #e0f587;
+min-height:100%;
+height:auto;
+width:600px;
+margin-left:auto;/* center it*/
+margin-right:auto;/* center it*/
+position:relative;
+text-align:left;
+}
+* html #content{ /**Don't change this**/
+height:100%;
+width:600px;/* box model hack for ie5.+*/
+w\idth:600px
+}
+
+#leftbar {
+width: 420px;
+padding-left: 20px;
+float: left;
+}
+#leftbar p {
+padding-top: 10px;
+padding-bottom: 5px;
+}
+#rightbar {
+width: 150px;
+float: right;
+}
+.toph2 {  /** This shouldn't have to be changed!**/
+padding-top: 35px;
+}
+#rightbar p:hover {
+color: #a28a71;
+text-decoration: underline;
+}
+#footer {
+background: url(images/footer.png) no-repeat;
+width:100%;
+position:relative;
+bottom:0;
+left:0;
+height:80px;
+padding-bottom: 30px;
+}
+#footer p {
+padding-top: 5px;
+color: #FFF;
+}
+#footer a {
+color: #e0f587;
+}
+#clearfooter{clear:both;height:80px;width:100%} /** Don't touch or the site will die**/
+div>p {margin:0}
